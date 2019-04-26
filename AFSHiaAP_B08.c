@@ -17,7 +17,7 @@
 #include <sys/wait.h>
 #define key 17
 
-static const char *dirpath = "/home/schielen/modul2";
+static const char *dirpath = "/home/schielen/shift4";
 char debug[1000];
 char charlist[1000] = "qE1~ YMUR2\"`hNIdPzi%^t@(Ao:=CQ,nx4S[7mHFye#aT6+v)DfKL$r?bkOGB>}!9_wV']jcp5JZ&Xl|\\8s;g<{3.u*W-0";
 char temp[1000];
