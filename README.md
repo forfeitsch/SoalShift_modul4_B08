@@ -16,7 +16,7 @@ Misalkan ada file bernama “halo” di dalam folder “INI_FOLDER”, dan key y
 Perhatian: Karakter ‘/’ adalah karakter ilegal dalam penamaan file atau folder dalam *NIX, maka dari itu dapat diabaikan
 ```
 
-**Penyelesaian **
+**Penyelesaian**
 
 Fungsi yang digunakan pada soal nomor 1 ini adalah sebagai berikut :
 
@@ -72,7 +72,7 @@ Sebelum diterapkannya file system ini, Atta pernah diserang oleh hacker LAPTOP_R
 Tidak dapat dibaca
 Jika ditemukan file dengan spesifikasi tersebut ketika membuka direktori, Atta akan menyimpan nama file, group ID, owner ID, dan waktu terakhir diakses dalam file “filemiris.txt” (format waktu bebas, namun harus memiliki jam menit detik dan tanggal) lalu menghapus “file bahaya” tersebut untuk mencegah serangan lanjutan dari LAPTOP_RUSAK.
 
-**Penyelesaian **
+**Penyelesaian**
 
 
 
