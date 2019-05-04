@@ -17,12 +17,35 @@ Perhatian: Karakter ‘/’ adalah karakter ilegal dalam penamaan file atau fold
 ```
 
 **Penyelesaian **
+
 Fungsi yang digunakan pada soal nomor 1 ini adalah sebagai berikut :
 
   1. Fungsi decrypt untuk dekripsi
+```  
+    void encrypt(char *str) {   
+     if(strcmp(str, ".") != 0 && strcmp(str, "..") != 0) {
+          int len = strlen(str), i, j, k = strlen(charlist);
+          for(i = 0; i < len; i++) {
+              char tmp = str[i];
+              for(j = 0; j < k; j++) str[i] = (tmp == charlist[j]? charlist[(j + key) % k] : str[i]);
+          }
+      }
+  }
+```
   2. Fungsi encrypt untuk enkripsi
-  3. Fungsi getatttribut
-  4. Fungsi Readdir
+```
+    void decrypt(char *str) {    
+        if(strcmp(str, ".") != 0 && strcmp(str, "..") != 0) {
+            int len = strlen(str), i, j, k = strlen(charlist);
+            for(i = 0; i < len; i++) {
+                char tmp = str[i];
+                for(j = 0; j < k; j++) str[i] = (tmp == charlist[j]? charlist[(j + k - key) % k] :                   str[i]);
+            }
+        }
+    }
+```
+  3. Fungsi getatttribut diberikan encrypt pada pathnya
+  4. Fungsi Readdir diberikan encrypt pada pathnya
   5. Fungsi Read
   6. Fungsi Write
 
@@ -50,6 +73,7 @@ Tidak dapat dibaca
 Jika ditemukan file dengan spesifikasi tersebut ketika membuka direktori, Atta akan menyimpan nama file, group ID, owner ID, dan waktu terakhir diakses dalam file “filemiris.txt” (format waktu bebas, namun harus memiliki jam menit detik dan tanggal) lalu menghapus “file bahaya” tersebut untuk mencegah serangan lanjutan dari LAPTOP_RUSAK.
 
 **Penyelesaian **
+
 
 
 ## Soal 4
